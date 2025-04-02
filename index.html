@@ -28,7 +28,7 @@
     }
     
     // Using AllOrigins as a CORS proxy.
-    var proxyUrl = 'https://api.allorigins.hexocode.repl.co/get?disableCache=true&url=' + encodeURIComponent(url);
+    var proxyUrl = 'https://thingproxy.freeboard.io/fetch/' + encodeURIComponent(url);
     
     fetch(proxyUrl)
       .then(function(response) {
